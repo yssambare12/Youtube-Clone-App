@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube APP</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="toggle-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <img src="img/logo.PNG" class="logo" alt="">
+
+        <div>
+            <input type="text" id="query" placeholder="Search">
+            <button  id="search" onclick="searchVideos()">Search</button>
+        </div>
+
+        <div class="user-options">
+            <img src="img/video.PNG" class="icon" alt="">
+            <img src="img/grid.PNG" class="icon" alt="">
+            <img src="img/bell.PNG" class="icon" alt="">
+            <div class="user-dp">
+                <img src="img/my photo.jpg">
+            </div>
+        </div>
+    </nav>
+    <div class="side-bar">
+        <a href="#" class="links active"><img src="img/home.PNG" alt="">home</a>
+        <a href="#" class="links"><img src="img/explore.PNG" alt="">explore</a>
+        <a href="#" class="links"><img src="img/subscription.PNG" alt="">subscription</a>
+        <hr class="seperator">
+        <a href="#" class="links"><img src="img/library.PNG" alt="">library</a>
+        <a href="#" class="links"><img src="img/history.PNG" alt="">history</a>
+        <a href="#" class="links"><img src="img/your-video.PNG" alt="">your video</a>
+        <a href="#" class="links"><img src="img/watch-later.PNG" alt="">watch leater</a>
+        <a href="#" class="links"><img src="img/liked video.PNG" alt="">like video</a>
+        <a href="#" class="links"><img src="img/show more.PNG" alt="">show more</a>
+    </div>
+    <div class="filters">
+        <button class="filter-options active">all</button>
+        <button class="filter-options">HTML</button>
+        <button class="filter-options">Css</button>
+        <button class="filter-options">javascript</button>
+        <button class="filter-options">Masai School</button>
+        <button class="filter-options">Programming</button>
+        <button class="filter-options">Coding</button>
+        <button class="filter-options">MangoDB</button>
+        <button class="filter-options">React JS</button>
+        <button class="filter-options">Trending</button>
+    </div>
+
+    <div id="videos"></div>       
+    
+    </div>
+    
+</body>
+</html>
+
+<script>
+     let videos = document.getElementById("videos");
+    async function searchVideos() {
+
+        let query = document.getElementById("query").value;
+        let res = await fetch(`https://youtube.googleapis.com/youtube/v3/search?q=${query}&type=videos&key=AIzaSyCIjxqMPIm9Mrtw2yYp8krLNo5NHdhbKRY&maxResults=20`)
+
+        let data = await res.json();
+        console.log(data);
+        appendVideos(data.items)
+    };
+
+    function appendVideos(video_data) {
+
+        videos.innerHTML = null;
+        video_data.forEach(({
+            id: {
+                videoId
+            }
+        }) => {
+
+
+
+            let div = document.createElement("div");
+
+            div.innerHTML = `<iframe width="260" height="200" src="https://www.youtube.com/embed/${videoId}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
+            div.style.marginTop = "20px";
+            videos.append(div);
+        })
+
+    }
+</script>

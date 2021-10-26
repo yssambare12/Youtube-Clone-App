@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Youtube APP</title>
+    <title>Youtube Mini App</title>
 
     <link rel="stylesheet" href="style.css">
 
 </head>
-<body>
+<body onload="searchVideos()">
 
     <nav class="navbar">
         <div class="toggle-btn">
@@ -27,9 +27,11 @@
             <img src="img/video.PNG" class="icon" alt="">
             <img src="img/grid.PNG" class="icon" alt="">
             <img src="img/bell.PNG" class="icon" alt="">
+            <p>Yogesh</p>
             <div class="user-dp">
                 <img src="img/my photo.jpg">
             </div>
+            <p><a href="createAccount.html">Log In</p>
         </div>
     </nav>
     <div class="side-bar">
@@ -84,8 +86,6 @@
                 videoId
             }
         }) => {
-
-
 
             let div = document.createElement("div");
 

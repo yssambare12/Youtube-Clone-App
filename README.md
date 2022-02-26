@@ -17,7 +17,6 @@ This is the clone of YouTube. This Website with Different types of Functionaliti
 * Login Page.
 * Products Page.
 * API 
-* 
 * Many More
 
 
@@ -31,14 +30,12 @@ This is the clone of YouTube. This Website with Different types of Functionaliti
 * HTML
 * Css
 * Javascript
-* NodeJS
-* MongoDB
 * Bootstrap
 
 ### Installation 
 * Clone the repository
     ``` 
-    https://github.com/yssambare12/strawberrynetwithbackend.github.io/blob/main/README.md
+    https://github.com/yssambare12/Youtube-Clone-App/blob/main/README.md
     ```
 ### Website Flow
 * Main Page of Website.

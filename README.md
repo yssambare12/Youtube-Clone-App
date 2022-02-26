@@ -2,7 +2,7 @@
 # YouTube.com Clone
 
 # Check Project On Live Mode 
-https://yssambare12.github.io/strawberrynetwithbackend.github.io/
+https://youtubeeclone.netlify.app/
 
 This is the clone of YouTube. This Website with Different types of Functionalities using Advance JavaScript
 

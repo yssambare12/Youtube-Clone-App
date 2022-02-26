@@ -41,28 +41,8 @@ This is the clone of YouTube. This Website with Different types of Functionaliti
     https://github.com/yssambare12/strawberrynetwithbackend.github.io/blob/main/README.md
     ```
 ### Website Flow
-* Homepage of Website.
+* Main Page of Website.
   <img src="https://miro.medium.com/max/1925/1*G6NCdmbmUmCAnO4UJ4m6oQ.png" title="hover text">
 
-* Login Page/SignUp Page
-  <img src="https://miro.medium.com/max/1925/1*iEPi1lYTxzjIL-cnD8DSSg.png" alt="accessibility text" width="500px">
-    <!-- login gif -->
-* Products Page
-  <img src="https://miro.medium.com/max/2730/1*lmbEleIti_cMy5SLgrokqA.png">
-  <img src="https://miro.medium.com/max/2728/1*kbeRKQmSyGGFBxBn6-YSpg.png">
-
-* Cart
-  <img src="https://miro.medium.com/max/1400/1*7XKc-uOsY3xtY6qkhY87Ug.png">
-* Checkout Page
-  <img src="https://miro.medium.com/max/1925/1*ey7SMm3qpr8ThM7g54dVHw.png">
-* Payments Page
-  <img src="https://miro.medium.com/max/1925/1*mARvPPmnLPkqUQjq_xURVA.png">
-
-## Contributors :
-* [Aakash Naykude](https://github.com/Aakash-Naykude)
+## Contributor :
 * [Yogesh Sambhare](https://github.com/yssambare12)
-* [Vani A](https://github.com/vani-231) 
-* [Chinmayi H](https://github.com/chinmayisuresh)
-* [Rohit Kumar](https://github.com/Rohit-0310)
-* [Narendra Kumar](https://github.com/narendrapanchal)
-

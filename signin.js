@@ -5,7 +5,8 @@ function myFunction() {
       x.style.display = "none";
     } else {
       x.style.display = "block";
-   
+    }
+  }
 
   function accFunction(){
         let y = document.getElementById("accLink");
@@ -36,5 +37,7 @@ function myFunction() {
           } else {
             alert("Not yet register!")
           }
-   
+    })
+
+    alert("Sign in completed")
   }

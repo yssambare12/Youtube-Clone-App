@@ -37,7 +37,5 @@ function myFunction() {
           } else {
             alert("Not yet register!")
           }
-    })
-
-    alert("Sign in completed")
+   
   }

@@ -5,8 +5,7 @@ function myFunction() {
       x.style.display = "none";
     } else {
       x.style.display = "block";
-    }
-  }
+   
 
   function accFunction(){
         let y = document.getElementById("accLink");

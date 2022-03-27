@@ -19,9 +19,6 @@ function myFunction() {
 
   function signin(e){
     e.preventDefault();
-    let myForm = document.getElementById("myform");
-    let email = myForm.email.value;
-    let password = myForm.password.value;
 
     let all_users = JSON.parse(localStorage.getItem("users"))
 
